@@ -1,0 +1,18 @@
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix cert: <http://www.w3.org/ns/auth/cert#> .
+@prefix rdfs: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+<> a foaf:PersonalProfileDocument ;
+   foaf:maker <#this> ;
+   foaf:primaryTopic <#this> .
+
+<#this> a foaf:Person ;
+   foaf:name "Julio Noe Hernandez Torres";
+   #foaf:img "https://holycrab13.github.io/me.png";
+   cert:key [
+      a cert:RSAPublicKey;
+      rdfs:label "Generated on Laptop";
+      cert:modulus "A8759E4370DF18019B49EB612FFBAE75FDD6049C751815FE9651B5F85E12E2A6CD4049B6CA0F21A12E41A21E091A5DDFF699CAEE0F1428A1D00CA1F135CD3BEAB2F6E2CE5F49A353EFBB0C331D075D0A1250E5642114351009E218FD1524F34C8866E5B416B3EC0F7B9D60BFF8357B3D9151B7912E57210501F004992C1B2151615B6AF9FDB5E4ABB13D8B40A381D1355B76812CDDCFC0753019D428339510D5D6D41FC3188FF3F2272B864BB3E049583546B92B63AB4E0467392A6216069BCB2F2F44CD048CFC2293A2D94E748EF723EC816314411C0094E2EB8F284C7F5BFA3C9C6CD4D3DEEE64DF0D2D1BB7F3295AA1A0CB9DB554DE962BF27E782D0A48CD"^^xsd:hexBinary;
+      cert:exponent "65537"^^xsd:nonNegativeInteger
+     ] .
